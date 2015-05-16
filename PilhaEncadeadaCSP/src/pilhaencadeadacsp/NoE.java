@@ -10,8 +10,13 @@ package pilhaencadeadacsp;
  * @author Claudio
  */
 public class NoE {
-    int valor;
+    private int valor;
+    private NoE Next;
 
+    public NoE() {
+       
+    }
+    
     public NoE(int valor) {
         this.valor = valor;
     }
@@ -22,6 +27,10 @@ public class NoE {
 
     public void setValor(int valor) {
         this.valor = valor;
+    }
+
+    public void setNext(NoE Next) {
+        this.Next = Next;
     }
     
     
