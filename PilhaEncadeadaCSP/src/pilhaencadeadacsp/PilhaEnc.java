@@ -67,7 +67,7 @@ public class PilhaEnc implements interfacePilhaEncadeada {
     public NoE pop() {
         if (eVazia()) {
             System.out.println("Pilha vazia, não posso retirar elemento desejado");
-            return null; 
+            
         }
         else {
             if (tamanho != 0) {
@@ -84,7 +84,7 @@ public class PilhaEnc implements interfacePilhaEncadeada {
 
     @Override
     public int pegarTopo() {
-        return 0; //na duvida
+        return 0;
     }
 
     @Override
