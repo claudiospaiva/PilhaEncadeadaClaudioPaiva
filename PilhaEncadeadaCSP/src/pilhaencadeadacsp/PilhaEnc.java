@@ -62,8 +62,15 @@ public class PilhaEnc implements interfacePilhaEncadeada {
             return null; 
         }
         else {
-            return null;
+            if (tamanho != 0) {
+            topo = topo.getNext();
+            tamanho--;
+            }
+            else {
+                System.out.println("A pilha já está vazia!");
+            }
         }
+        return null;
     }
     
 
@@ -74,10 +81,14 @@ public class PilhaEnc implements interfacePilhaEncadeada {
 
     @Override
     public void listar() {
-        NoE percorre = topo;
-        while (percorre.getNext() !=null){
-            System.err.println(percorre.getValor());
-            percorre = percorre.getNext();
+        if (tamanho != 0) {
+            NoE percorre = topo;
+            while (percorre.getNext() !=null){
+                System.err.println(percorre.getValor());
+                percorre = percorre.getNext();
+        }}
+        else {
+            System.out.println("A pilha já está vazia!");
         }
     }
 

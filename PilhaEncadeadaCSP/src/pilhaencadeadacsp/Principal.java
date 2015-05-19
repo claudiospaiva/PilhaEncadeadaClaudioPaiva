@@ -18,5 +18,12 @@ public class Principal {
         x.push(5);
         x.listar();
         x.pop();
+        x.listar();
+        x.pop();
+        x.listar();
+        x.pop();
+        x.listar();
+        x.pop();
+        x.listar();
     }
 }
