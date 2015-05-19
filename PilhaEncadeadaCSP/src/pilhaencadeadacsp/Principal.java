@@ -18,6 +18,7 @@ public class Principal {
         x.push(5);
         x.listar();
         x.pop();
+        System.out.println();
         x.listar();
         x.pop();
         x.listar();
