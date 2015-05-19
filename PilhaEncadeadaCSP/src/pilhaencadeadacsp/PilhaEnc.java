@@ -9,57 +9,88 @@ package pilhaencadeadacsp;
  *
  * @author Claudio
  */
-public class PilhaEnc {
-    //public class PilhaEnc implements interfacePilhaEncadeada {
-
-    //private Pilha topo;
-    //private Pilha fundo;
-    // int tamanhoPilha;
+public class PilhaEnc implements interfacePilhaEncadeada {
     
-    //public Pilha () {
-        //topo = null;
-        //fundo = null;
-        //tamanhoPilha = 0;
-    //}
-   // @Override
-    //public void criarPilha(int) {
-        
-    //}
+    private NoE topo;
+    private NoE fim;
+    private int tamanho;
 
-    //@Override
-    //public boolean eVazia() {
-        
-    //}
+  
+    @Override
+    public void criarPilha() {
+        topo = null;
+        fim = null;
+        tamanho = 0;
+    }
 
-    //@Override
-    //public int tamanho() {
-        
-    //}
+    @Override
+    public int tamanho() {
+          return tamanho;
+    }
 
-   // @Override
-    //public void limpar() {
+    @Override
+    public void limpar() {
         
-    //}
+    }
 
-//    @Override
- //   public NoE push(int valor) {
-        
-    //}
+    @Override
+    public NoE push(int valor) {
+        if (fim==null) {
+            topo = new NoE();
+            fim = topo;
+            NoE novoNoE = new NoE();
+            novoNoE.setValor(valor);
+            novoNoE.setNext(topo);
+            topo = novoNoE;
+            tamanho++;
+            return topo; 
+        }
+        else {
+            NoE novoNoE = new NoE();
+            novoNoE.setValor(valor);
+            novoNoE.setNext(topo);
+            topo = novoNoE;
+            tamanho++;
+            return topo; 
+        }
+    }
 
+    @Override
+    public NoE pop() {
+        if (eVazia()) {
+            System.out.println("Pilha vazia, não posso retirar elemento desejado");
+            return null; 
+        }
+        else {
+            return null; //na duvida 
+        }
+    }
     
-   // public NoE pop() {
-        
-    //}
 
-   // @Override
-    //public int pegarTopo() {
-        
-    //}
+    @Override
+    public int pegarTopo() {
+        return 0; //na duvida
+    }
 
-   // @Override
-    //public void listar() {
-        
-    //}
-    
-//}         
+    @Override
+    public void listar() {
+        NoE percorre = topo;
+        while (percorre.getNext() !=null){
+            System.err.println(percorre.getValor());
+            percorre = percorre.getNext();
+        }
+    }
+
+    /**
+     *
+     * @return
+     */
+    @Override
+    public boolean eVazia() {
+       if (topo == null) {
+           return true;
+       }
+         return false;
+    }
+
 }

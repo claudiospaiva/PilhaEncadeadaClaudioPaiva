@@ -32,6 +32,10 @@ public class NoE {
     public void setNext(NoE Next) {
         this.Next = Next;
     }
+
+    public NoE getNext() {
+        return Next;
+    }
     
     
 }
