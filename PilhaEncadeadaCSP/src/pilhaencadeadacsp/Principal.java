@@ -18,13 +18,16 @@ public class Principal {
         x.push(5);
         x.listar();
         x.pop();
-        System.out.println();
+        System.out.println("O novo tamanho da pilha é: " + x.getTamanho());
         x.listar();
         x.pop();
+        System.out.println("O novo tamanho da pilha é: " + x.getTamanho());
         x.listar();
         x.pop();
+        System.out.println("O novo tamanho da pilha é: " + x.getTamanho());
         x.listar();
         x.pop();
+        System.out.println("O novo tamanho da pilha é: " + x.getTamanho());
         x.listar();
     }
 }

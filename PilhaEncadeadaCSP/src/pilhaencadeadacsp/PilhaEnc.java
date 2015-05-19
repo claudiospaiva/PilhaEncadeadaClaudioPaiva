@@ -15,7 +15,15 @@ public class PilhaEnc implements interfacePilhaEncadeada {
     private NoE fim;
     private int tamanho;
 
-  
+    public int getTamanho() {
+        return tamanho;
+    }
+
+    public void setTamanho(int tamanho) {
+        this.tamanho = tamanho;
+    }
+
+    
     @Override
     public void criarPilha() {
         topo = null;
