@@ -38,7 +38,7 @@ public class PilhaEnc implements interfacePilhaEncadeada {
 
     @Override
     public void limpar() {
-        
+        topo.setNext(null);
     }
 
     @Override
@@ -84,7 +84,7 @@ public class PilhaEnc implements interfacePilhaEncadeada {
 
     @Override
     public int pegarTopo() {
-        return 0;
+        return topo.getNext().getValor();
     }
 
     @Override

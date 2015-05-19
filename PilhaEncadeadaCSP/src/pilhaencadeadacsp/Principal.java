@@ -20,24 +20,12 @@ public class Principal {
         
         x.listar();
         System.out.println("O tamanho da pilha é: " + x.getTamanho());
-        
         x.pop();
         
         x.listar();
         System.out.println("O novo tamanho da pilha é: " + x.getTamanho());
         
-        x.pop();
-        
-        x.listar();
-        System.out.println("O novo tamanho da pilha é: " + x.getTamanho());
-        
-        x.pop();
-        
-        x.listar();
-        System.out.println("O novo tamanho da pilha é: " + x.getTamanho());
-        
-        x.pop();
-        
+        x.limpar();
         x.listar();
         System.out.println("O novo tamanho da pilha é: " + x.getTamanho());
     }
