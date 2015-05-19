@@ -62,7 +62,7 @@ public class PilhaEnc implements interfacePilhaEncadeada {
             return null; 
         }
         else {
-            return null; //na duvida 
+            return null;
         }
     }
     
@@ -77,7 +77,7 @@ public class PilhaEnc implements interfacePilhaEncadeada {
         NoE percorre = topo;
         while (percorre.getNext() !=null){
             System.err.println(percorre.getValor());
-            percorre = percorre.getNext();
+            percorre = topo.getNext();
         }
     }
 

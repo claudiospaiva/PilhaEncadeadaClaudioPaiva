@@ -12,6 +12,11 @@ package pilhaencadeadacsp;
 public class Principal {
     
     public static void main(String[] args) {
-     
+        PilhaEnc x = new PilhaEnc();
+        x.push(2);
+        x.push(0);
+        x.push(5);
+        x.listar();
+        x.pop();
     }
 }
