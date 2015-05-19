@@ -77,7 +77,7 @@ public class PilhaEnc implements interfacePilhaEncadeada {
         NoE percorre = topo;
         while (percorre.getNext() !=null){
             System.err.println(percorre.getValor());
-            percorre = topo.getNext();
+            percorre = percorre.getNext();
         }
     }
 
