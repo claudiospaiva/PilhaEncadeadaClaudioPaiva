@@ -38,6 +38,7 @@ public class PilhaEnc implements interfacePilhaEncadeada {
 
     @Override
     public void limpar() {
+        tamanho = 0;
         topo.setNext(null);
     }
 
