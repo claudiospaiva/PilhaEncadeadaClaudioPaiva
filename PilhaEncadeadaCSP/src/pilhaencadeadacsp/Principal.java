@@ -17,7 +17,7 @@ public class Principal {
         x.push(0);
         x.push(5);
         x.push(11);
-        
+        x.push(50);
         x.listar();
         System.out.println("O tamanho da pilha é: " + x.getTamanho());
         x.pop();
