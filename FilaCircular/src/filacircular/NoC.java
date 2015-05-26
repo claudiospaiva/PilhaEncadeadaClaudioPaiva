@@ -11,8 +11,17 @@ package filacircular;
  */
 public class NoC {
     private int valor;
+    private int NoC;
 
     public NoC(int valor) {
+        this.valor = valor;
+    }
+    
+    NoC() {
+        
+    }
+    
+    public void NoC (int valor) {
         this.valor = valor;
     }
     

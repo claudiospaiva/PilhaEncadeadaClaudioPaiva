@@ -11,13 +11,19 @@ package filacircular;
  */
 public class FilaCirc implements interfaceFilaCircular {
     
-    private NoC head;
-    private NoC tail;
-    private Object[] data;
+    private int head=0;
+    private int tail=0;
+    private NoC FC[];
+    private int tamanho;
 
+    public FilaCirc() {
+        this.tamanho = 0;
+    }
+  
     @Override
     public void criarFila(int tamanho) {
-        data = new Object [tamanho];
+        
+        
     }
 
     @Override
@@ -34,7 +40,7 @@ public class FilaCirc implements interfaceFilaCircular {
 
     @Override
     public int tamanho() {
-        return 0;
+        return tamanho;
     }
 
     @Override
