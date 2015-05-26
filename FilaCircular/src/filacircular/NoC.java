@@ -10,5 +10,19 @@ package filacircular;
  * @author Claudio
  */
 public class NoC {
+    private int valor;
+
+    public NoC(int valor) {
+        this.valor = valor;
+    }
+    
+    public int getValor() {
+        return valor;
+    }
+
+    public void setValor(int valor) {
+        this.valor = valor;
+    }
+    
     
 }
