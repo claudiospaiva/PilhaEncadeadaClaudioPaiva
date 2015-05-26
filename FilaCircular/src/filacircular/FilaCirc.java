@@ -13,41 +13,45 @@ public class FilaCirc implements interfaceFilaCircular {
     
     private NoC head;
     private NoC tail;
-    private Object[] array;
+    private Object[] data;
 
     @Override
     public void criarFila(int tamanho) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        data = new Object [tamanho];
     }
 
     @Override
     public boolean eCheia() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return false;
+        
     }
 
     @Override
     public boolean eVazia() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return false;
+        
     }
 
     @Override
     public int tamanho() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return 0;
     }
 
     @Override
     public NoC enfileirar(int valor) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return null;
+        
     }
 
     @Override
     public NoC desenfileirar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return null;
+        
     }
 
     @Override
     public int pegarInicio() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return 0;
     }
 
     @Override
