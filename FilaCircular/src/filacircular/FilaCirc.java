@@ -10,6 +10,10 @@ package filacircular;
  * @author Claudio
  */
 public class FilaCirc implements interfaceFilaCircular {
+    
+    private NoC head;
+    private NoC tail;
+    private Object[] array;
 
     @Override
     public void criarFila(int tamanho) {
