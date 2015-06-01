@@ -22,7 +22,12 @@ public class FilaCircular {
         FC.enfileirar(2);
         FC.enfileirar(20);
         FC.enfileirar(10);
+        
+         
+        
+        
         FC.desenfileirar();
+        
     }
     
 }

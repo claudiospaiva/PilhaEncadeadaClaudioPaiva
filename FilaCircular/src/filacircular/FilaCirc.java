@@ -50,15 +50,17 @@ public class FilaCirc implements interfaceFilaCircular {
             if(quantidade < capacidade && tail < capacidade){
                 FC[tail++] = aux;
                 quantidade++;
+                System.out.println("O elemento " + valor + "foi adicionado a " + tail);
                 return aux;
             } else if (tail == capacidade){
                 tail = 0;
                 FC[++tail] = aux;
                 quantidade++;
+                System.out.println("O elemento " + valor + "foi adicionado a" + tail);
                 return aux;
             }
         }
-        System.out.println("A fila esta preenchida!");
+        System.out.println("A fila esta preenchida");
         return null;
         
     }
@@ -69,7 +71,7 @@ public class FilaCirc implements interfaceFilaCircular {
                 NoC aux = FC[head];
                 FC[head++] = null;
                 quantidade--;
-                System.out.println("O Elemento "+ aux.getValor() + " foi retirado do campo " + head + "!! ");
+                System.out.println("O Elemento " + aux.getValor() + " foi retirado do campo " + head + "!! ");
                 return aux;
         }
         System.out.println("A fila nÃ£o possui elementos.");
