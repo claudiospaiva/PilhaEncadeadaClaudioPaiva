@@ -16,7 +16,7 @@ public class NoArvBin {
     private NoArvBin Dir;
 
     public NoArvBin() {
-        
+        this(null, null, null);
     }
     
     public NoArvBin (Object theElement,  NoArvBin esq, NoArvBin dir) {
@@ -44,11 +44,72 @@ public class NoArvBin {
         }
     }
     public void printPreOrd () {
-        
+        System.out.println(elemento);
+        if ( Esq != null) {
+            Esq.printPreOrd();
+        }
+        if ( Dir != null) {
+            Dir.printPreOrd();
+        }
     }
     public void printPostOrd () {
+        if ( Esq != null) {
+            Esq.printPostOrd();
+        }
+        if ( Dir != null) {
+            Dir.printPostOrd();
+        }
+        System.out.println(elemento);
+    }
+    
+    public void printOrdemInt () {
+        if ( Esq != null) {
+            Esq.printOrdemInt();
+        }
+        System.out.println(elemento);
+        if ( Dir != null) {
+            Dir.printOrdemInt();
+        }
         
     }
+    public NoArvBin duplicar () {
+        NoArvBin raiz = new NoArvBin (elemento, null, null);
+        
+        if (Esq != null) //se existe uma sub-árvore (à Esquerda)
+        {
+            raiz.Esq = Esq.duplicar();
+        }
+        if (Esq != null) {
+            raiz.Dir = Dir.duplicar();
+        }
+        return raiz; //retorne a árvore resultante!
+    }
+
+    public Object getElemento() {
+        return elemento;
+    }
+
+    public void setElemento(Object elemento) {
+        this.elemento = elemento;
+    }
+
+    public NoArvBin getEsq() {
+        return Esq;
+    }
+
+    public void setEsq(NoArvBin Esq) {
+        this.Esq = Esq;
+    }
+
+    public NoArvBin getDir() {
+        return Dir;
+    }
+
+    public void setDir(NoArvBin Dir) {
+        this.Dir = Dir;
+    }
+ 
+    
     
     
 }
